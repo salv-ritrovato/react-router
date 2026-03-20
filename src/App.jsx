@@ -1,8 +1,12 @@
 /* Importing Bootstrap + React Router */
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 /* Importing my pages */
-import { Home, AboutUs, Products } from "./pages"
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import Products from './pages/Products';
+import DefaultLayout from "./layout/DefaultLayout";
 
 function App() {
 

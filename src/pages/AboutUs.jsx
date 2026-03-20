@@ -1,6 +1,6 @@
 export default function AboutUs() {
-    
-    return (
 
+    return (
+        <h1>ciao a tutti</h1>
     )
 }

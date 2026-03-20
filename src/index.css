@@ -1,0 +1,31 @@
+/* IMPORTING CUSTOM FONTS FROM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+/* ROOT -- PAGE PALETTE */
+:root {
+    --primarycolor: #111111;
+    --secondarycolor: #FFFFFF;
+    --accents: #4F46E5;
+    --background: #F9FAFB;
+    --soft-texts: #6B72B0;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--secondarycolor);
+}
+
+.nav-link {
+    font-family: 'Syne', sans-serif;
+    font-weight: 500;
+
+}
+
+/* LOGO */
+.navbar-brand {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
