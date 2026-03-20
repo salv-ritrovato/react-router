@@ -1,0 +1,26 @@
+/* Importing Bootstrap + React Router */
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+/* Importing my pages */
+import { Home, AboutUs, Products } from "./pages"
+
+function App() {
+
+
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          {/* Using DefaultLayout to import my header and footer in every page */}
+          <Route element={<DefaultLayout></DefaultLayout>}>
+            <Route element={<Home></Home>} path="/"></Route>
+            <Route element={<AboutUs></AboutUs>} path="/aboutus"></Route>
+            <Route element={<Products></Products>} path="/products"></Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
+}
+
+export default App
