@@ -6,31 +6,33 @@ import navbar from "../assets/navbar"
 export default function Header() {
 
     return (
-        /* NAVBAR START - MADE IT STICKY FOR A MODERN EFFECT  */
-        <nav className="navbar navbar-expand-lg px-3 sticky-top">
-            <NavLink className="navbar-brand" to="/">MODERNO</NavLink>
-            {/* HAMBURGER MENU FOR MOBILE BROWSING */}
-            <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-            >
-                <span className="navbar-toggler-icon"></span>
-            </button>
+        <header>
+            {/* NAVBAR START - MADE IT STICKY FOR A MODERN EFFECT */}
+            <nav className="navbar navbar-expand-lg px-3 sticky-top">
+                <NavLink className="navbar-brand" to="/"><span className="logoDot">•</span>MODERNO.</NavLink>
+                {/* HAMBURGER MENU FOR MOBILE BROWSING */}
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span className="navbar-toggler-icon"></span>
+                </button>
 
-            <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav ms-auto">
-                    {/* GENERATING MY LINKS DYNAMICALLY WITH MAP METHOD FROM MY NAVBAR.JS FILE */}
-                    {navbar.map(({ id, path, text }) => (
-                        <li key={id} className="nav-item">
-                            <NavLink className="nav-link" to={path}>
-                                {text}
-                            </NavLink>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </nav>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ms-auto">
+                        {/* GENERATING MY LINKS DYNAMICALLY WITH MAP METHOD FROM MY NAVBAR.JS FILE */}
+                        {navbar.map(({ id, path, text }) => (
+                            <li key={id} className="nav-item">
+                                <NavLink className="nav-link" to={path}>
+                                    {text}
+                                </NavLink>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </nav>
+        </header>
     )
 }
