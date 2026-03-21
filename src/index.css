@@ -36,7 +36,6 @@
 }
 
 /* MAIN -- HOME PAGE */
-
 .herobanner {
     padding: 110px 48px 90px
 }
@@ -74,7 +73,6 @@
 }
 
 /* MAIN -- ABOUT US */
-
 .hero {
     padding: 100px 48px 80px;
     max-width: 700px;
@@ -103,4 +101,30 @@
     font-weight: 400;
     line-height: 1.7;
     margin: 0;
+}
+
+/* CARDS */
+.card {
+  background-color: var(--secondarycolor);
+  border: 1px solid var(--accents);
+  color: var(--primarycolor);
+  font-size: 14px;
+  font-family: var(--logofont);
+}
+
+.card-title {
+  color: var(--primarycolor);
+  font-family: var(--logofont);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card strong {
+  color: var(--accents);
+}
+
+.card-img-top {
+  background-color: var(--background);
+  height: 10rem;
+  object-fit: contain;
 }
