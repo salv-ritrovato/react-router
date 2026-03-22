@@ -104,6 +104,15 @@
 }
 
 /* CARDS */
+.productshead {
+    font-family: var(--logofont);
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -3px;
+    line-height: 1;
+    margin: 0 0 24px;
+}
+
 .card {
     background-color: var(--secondarycolor);
     border: 1px solid rgba(79, 70, 229, 0.25);

@@ -29,6 +29,7 @@ export default function Products() {
         <main>
             <section>
                 <div className="container mt-4">
+                    <h1 className="mb-3 productshead">Our products</h1>
                     <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
                         {/* Rendering my product cards through the map method */}
                         {products.map((product) =>
