@@ -105,26 +105,68 @@
 
 /* CARDS */
 .card {
-  background-color: var(--secondarycolor);
-  border: 1px solid var(--accents);
-  color: var(--primarycolor);
-  font-size: 14px;
-  font-family: var(--logofont);
+    background-color: var(--secondarycolor);
+    border: 1px solid rgba(79, 70, 229, 0.25);
+    color: var(--primarycolor);
+    font-size: 14px;
+    font-family: var(--logofont);
+    border-radius: 14px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.15);
 }
 
 .card-title {
-  color: var(--primarycolor);
-  font-family: var(--logofont);
-  font-size: 16px;
-  font-weight: 600;
+    color: var(--primarycolor);
+    font-family: var(--logofont);
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card strong {
-  color: var(--accents);
+    color: var(--accents);
 }
 
 .card-img-top {
-  background-color: var(--background);
-  height: 10rem;
-  object-fit: contain;
+    background-color: var(--background);
+    height: 10rem;
+    object-fit: contain;
+    border-bottom: 1px solid rgba(79, 70, 229, 0.1);
+}
+
+.badge-price {
+    display: inline-block;
+    background: rgba(79, 70, 229, 0.08);
+    color: var(--accents);
+    font-weight: 600;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 50px;
+}
+
+.btn-add-to-cart {
+    display: block;
+    width: 100%;
+    background: var(--accents);
+    color: var(--secondarycolor);
+    font-family: var(--logofont);
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 0;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.description {
+    color: var(--soft-texts);
+    font-size: 13px;
+    line-height: 1.5;
 }

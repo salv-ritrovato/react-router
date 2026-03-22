@@ -28,17 +28,18 @@ export default function Products() {
     return (
         <main>
             <section>
-                <div className="container mt-3">
-                    <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+                <div className="container mt-4">
+                    <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
                         {/* Rendering my product cards through the map method */}
                         {products.map((product) =>
                             <div className="col" key={product.id}>
                                 <div className="card h-100">
                                     <img className="card-img-top p-3" src={product.image} alt={product.title} />
-                                    <div className="card-body">
+                                    <div className="card-body d-flex flex-column">
                                         <h3 className="card-title mb-2">{product.title}</h3>
-                                        <p className='mb-0'><strong>Price:</strong> {product.price}</p>
-                                        <p><strong>Description:</strong> {product.description}</p>
+                                        <span className="badge-price mb-2">€ {product.price}</span>
+                                        <p className="description flex-grow-1">{product.description}</p>
+                                        <button className="btn-add-to-cart">Aggiungi al carrello</button>
                                     </div>
                                 </div>
                             </div>
