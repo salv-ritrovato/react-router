@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react"
 /* Importing Axios */
 import axios from "axios";
+/* Importing the Link component from React Router */
+import { Link } from "react-router-dom";
 
 export default function Products() {
     /* Declaring an useState variable where my API of products will go */
@@ -34,15 +36,17 @@ export default function Products() {
                         {/* Rendering my product cards through the map method */}
                         {products.map((product) =>
                             <div className="col" key={product.id}>
-                                <div className="card h-100">
-                                    <img className="card-img-top p-3" src={product.image} alt={product.title} />
-                                    <div className="card-body d-flex flex-column">
-                                        <h3 className="card-title mb-2">{product.title}</h3>
-                                        <span className="badge-price mb-2">€ {product.price}</span>
-                                        <p className="description flex-grow-1">{product.description}</p>
-                                        <button className="btn-add-to-cart">Aggiungi al carrello</button>
+                                <Link to={`/products/${product.id}`} className="text-decoration-none text-dark">
+                                    <div className="card h-100">
+                                        <img className="card-img-top p-3" src={product.image} alt={product.title} />
+                                        <div className="card-body d-flex flex-column">
+                                            <h3 className="card-title mb-2">{product.title}</h3>
+                                            <span className="badge-price mb-2">€ {product.price}</span>
+                                            <p className="description flex-grow-1">{product.description}</p>
+                                            <button className="btn-add-to-cart">Aggiungi al carrello</button>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </div>
                         )}
                     </div>
