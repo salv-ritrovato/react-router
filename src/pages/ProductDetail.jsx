@@ -19,10 +19,10 @@ export default function ProductDetail() {
     return (
         <main>
             <div className="container mt-4">
-                <h1>{product?.title}</h1>
-                <img src={product?.image} alt={product?.title} />
-                <p>{product?.description}</p>
-                <span>€ {product?.price}</span>
+                <h1 className="singletitle mb-5">{product?.title}</h1>
+                <img className="singleimg" src={product?.image} alt={product?.title} />
+                <p className="singledescr">{product?.description}</p>
+                <span className="singleprice">€ {product?.price}</span>
             </div>
         </main>
     );
