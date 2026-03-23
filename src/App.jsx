@@ -8,6 +8,8 @@ import AboutUs from './pages/AboutUs';
 import Products from './pages/Products';
 import DefaultLayout from "./layout/DefaultLayout";
 import ProductDetail from './pages/ProductDetail';
+import "bootstrap-icons/font/bootstrap-icons.css";
+   
 
 function App() {
 

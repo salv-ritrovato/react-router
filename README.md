@@ -1,5 +1,4 @@
 # Esercizio di oggi: React Router Store
-
 Creiamo il frontend del nostro mini e-commerce e le sue pagine principali!
 Useremo Fake Store API come backend fittizio per simulare i dati dei prodotti
 https://fakestoreapi.com/
