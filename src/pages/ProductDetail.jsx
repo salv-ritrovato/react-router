@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 /* Importing Axios for API calls */
 import axios from "axios";
+/* Importing NavLink for custom buttons */
 import { NavLink } from "react-router-dom";
 
 export default function ProductDetail() {

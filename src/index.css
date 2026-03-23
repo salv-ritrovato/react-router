@@ -247,15 +247,13 @@
 .singleimg {
     display: block;
     margin: 0 auto;
+    width: 25%;
 }
 
 .singleprice {
     font-size: 1.5rem;
     font-weight: 500;
     color: #2c2c2c;
-}
-
-.singleprice {
     display: inline-flex;
     align-items: center;
     gap: 6px;
